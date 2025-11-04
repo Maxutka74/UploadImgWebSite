@@ -1,0 +1,53 @@
+body {
+    background: rgb(21,21,21);
+    font-family: 'Inter', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__title {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.header__text {
+    font-size: 14px;
+    padding-bottom: 40px;
+}
+
+.header__button-btn {
+    font-size: 12px;
+    text-wrap: nowrap;
+    text-align: center;
+    border: none;
+    border-radius: 7px;
+    padding: 12px 16px;
+    margin-bottom: 60px;
+    background-color: rgb(0,96,255);
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+}
+
+.hero__image {
+    display: none;
+}
+
+.hero__image.is-visible {
+    display: block;
+}
+
+.img {
+    width: 426px;
+    height: 559px;
+    object-fit: cover;
+    background-clip: content-box;
+}
