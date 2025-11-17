@@ -8,8 +8,11 @@ class AppConfig(BaseSettings):
     username: str | None = None
     password: str | None = None
 
-    Image_DIR: str
-    LOG_DIR: str
+    IMAGE_DIR: str
+    LOG_DIR: Path
+
+    WEB_SERVER_WORKERS: int
+    WEB_SERVER_START_PORT: int
 
     MAX_FILE_SIZE: int = 5 * 1024 * 1024
     SUPPORTED_FORMATS: set[str] = {'.jpg', '.png', '.gif'}
